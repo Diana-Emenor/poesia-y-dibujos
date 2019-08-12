@@ -1,0 +1,204 @@
+  
+* {
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #EBEBD3;
+    font-family: 'Montserrat', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #ddd;
+}
+
+#main-hader {
+    background-color: #011627;
+    height: 15%;
+    padding: 1em;
+    margin-bottom: 2em;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Icono */
+
+.icono-circulo {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0;
+}
+
+.icono-foto {
+    width: 100%;
+}
+
+.titulo {
+    font-size: 20px;
+    margin-left: 1em;
+}
+
+.titulo, .icono-circulo {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#main {
+    float: left;
+    width: 70%;
+    padding: 0 30px;
+}
+
+#sidebar {
+    float: right;
+    width: 30%;
+    background: #011627;
+    padding: 10px;
+}
+
+#sidebar h2 {
+    color: #ddd;
+    padding-left: .5em;
+    font-size: 20px;
+}
+
+#sidebar a {
+    color: #ddd;
+}
+
+#etiquetas {
+    list-style: none;
+    line-height: 2em;
+    padding: 0;
+}
+
+#etiquetas li {
+    box-shadow: 5px 0 rgba(221, 221, 221,.8) inset;
+    padding-left: 1em;
+    /*margin-bottom: .5em;*/
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+}
+
+#etiquetas li:hover {
+    /*box-shadow: 25em 0 rgba(51, 51, 51,.2) inset;*/
+    box-shadow: 30em 0 rgba(221, 221, 221,.3) inset;
+}
+
+#etiquetas a {
+    font-size: 20px;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+    display: block;
+}
+
+#etiquetas a:hover {
+    margin-left: 1em;
+}
+
+#showcase {
+    min-height: 10px;
+    margin-bottom: 30px;
+    text-align: center;
+    padding: 0;
+}
+
+#showcase h2 {
+    color: #011627;
+    font-size: 20px;
+    line-height: 1.5em;
+    padding-top: 10px;
+}
+
+#showcase p {
+    color: #011627;
+}
+
+.poema {
+    padding: 20px;
+    border: 1px solid #011627;
+    background-color: #C4BFB4;
+    margin-bottom: 30px;
+}
+
+.poema-miniatura {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0;
+}
+
+.poema-img {
+    width: 100%;
+    height: 100%;
+}
+
+.poema-des {
+    font-size: 20px;
+    margin-left: 1em;
+    color: #011627;
+}
+
+.poema-etiq ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.poema-etiq li {
+    background-color: #E15D74;
+    display: inline-block;
+    font-size: 15px;
+    padding: .5em;
+}
+
+.poema-etiq a {
+    color: #011627;
+}
+
+.poema-des, .poema-miniatura, .poema-etiq {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#main-footer {
+    background: #011627;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+@media(max-width: 800px) {
+    #main {
+        width: 100%;
+        float: none;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    #sidebar {
+        width: 100%;
+        float: none;
+    }
+
+    #posts {
+        width: 100%;
+        float: none;
+    }
+}
